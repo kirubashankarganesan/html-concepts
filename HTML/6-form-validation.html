@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Form with Validation</h1>
+        <hr>
+    </center>
+
+    <form action="#" method="POST">
+
+        <label>Username:</label>
+        <input type="text" name="username" required minlength="3"><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Mobile:</label>
+        <input type="tel" pattern="[0-9]{10}" required><br><br>
+
+        <label>Age:</label>
+        <input type="number" min="18" max="60" required><br><br>
+
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>
